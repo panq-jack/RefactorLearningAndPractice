@@ -3,7 +3,12 @@ package com.jackpan.chapater1;
 import com.jackpan.chapater1.refactor0.Customer;
 import com.jackpan.chapater1.refactor0.Movie;
 import com.jackpan.chapater1.refactor0.Rental;
-import com.jackpan.chapater1.refactor1.*;
+import com.jackpan.chapater1.refactor1.Customer1;
+import com.jackpan.chapater1.refactor1.Movie1;
+import com.jackpan.chapater1.refactor1.Rental1;
+import com.jackpan.chapater1.refactor2.Customer2;
+import com.jackpan.chapater1.refactor2.Movie2;
+import com.jackpan.chapater1.refactor2.Rental2;
 import com.jackpan.chapater1.refactor2.price.ChildrenMoviePrice;
 import com.jackpan.chapater1.refactor2.price.RegularMoviePrice;
 import com.jackpan.chapater1.refactor2.price.ReleaseMoviePrice;
@@ -49,7 +54,7 @@ public class Main {
     private static void afterRefactor2() {
         System.out.println(" -------------refactor 2 with polymorphism---------------");
         Customer2 customer = new Customer2("jack pan [2]");
-        var movie = new Movie2("spider man", new ChildrenMoviePrice());
+        Movie2 movie = new Movie2("spider man", new ChildrenMoviePrice());
         customer.addRental(new Rental2(movie, 3));
         customer.addRental(new Rental2(new Movie2("ET", new RegularMoviePrice()), 2));
         customer.addRental(new Rental2(new Movie2("let bullet fly", new ReleaseMoviePrice()), 4));

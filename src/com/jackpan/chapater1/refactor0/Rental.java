@@ -1,6 +1,11 @@
 package com.jackpan.chapater1.refactor0;
 
 /**
+ * Represent a rental record
+ * <p>including:
+ * rentDays:
+ * movie:
+ * </p>
  * Created by i520130(jackpan0321@gmail.com) on 05/04/2020
  */
 public class Rental {

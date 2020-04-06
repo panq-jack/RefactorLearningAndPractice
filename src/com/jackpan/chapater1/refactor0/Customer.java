@@ -4,6 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Class {@code Customer}
+ * Designed to represent a customer, to collect the rental fees and earned points of a customer.
+ * <p> provide following functions:</p>
+ * @see Customer#statement()
+ * @see Customer#addRental(Rental)
+ *
+ * <p>functions for internal usage:</p>
+ *
+ * @version 1.0
+ * @author Jack Pan
  * Created by i520130(jackpan0321@gmail.com) on 05/04/2020
  */
 public class Customer {
@@ -16,6 +26,10 @@ public class Customer {
         this.name = name;
     }
 
+    /**
+     * for add a rental
+     * @param rental: rental
+     */
     public void addRental(Rental rental) {
         rentals.add(rental);
     }
@@ -23,7 +37,7 @@ public class Customer {
     /**
      * print rental fees and earned points
      *
-     * @return
+     * @return statement
      */
     public String statement() {
         double totalAmount = 0;

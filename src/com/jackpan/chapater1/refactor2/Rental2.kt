@@ -1,4 +1,4 @@
-package com.jackpan.chapater1.refactor1
+package com.jackpan.chapater1.refactor2
 
 /**
  * Created by i520130(jackpan0321@gmail.com) on 05/04/2020

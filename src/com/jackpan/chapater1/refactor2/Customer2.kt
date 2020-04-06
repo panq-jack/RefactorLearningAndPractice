@@ -1,4 +1,4 @@
-package com.jackpan.chapater1.refactor1
+package com.jackpan.chapater1.refactor2
 
 import java.lang.StringBuilder
 
